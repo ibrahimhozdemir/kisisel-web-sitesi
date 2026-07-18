@@ -1,0 +1,151 @@
+export const data = {
+  tr: {
+    header: {
+      logo: "ibrahim",
+      langButton: "SWITCH TO ENGLISH",
+      themeDark: "KARANLIK MOD",
+      themeLight: "AYDINLIK MOD",
+    },
+    hero: {
+      title: "Ben bir Frontend Geliştiricisiyim...",
+      description:
+        "...harika kullanıcı deneyimleri sunan, sağlam ve ölçeklenebilir frontend ürünleri üretmeyi seviyorum.",
+      buttons: [
+        { id: 1, text: "Github", link: "https://github.com/KULLANICI-ADIN" },
+        { id: 2, text: "LinkedIn", link: "https://linkedin.com/in/KULLANICI-ADIN" },
+      ],
+      image: "/hero.png",
+    },
+    skills: {
+      title: "Yetenekler",
+      items: [
+        { id: 1, name: "JAVASCRIPT", logo: "https://skillicons.dev/icons?i=js" },
+        { id: 2, name: "NODE", logo: "https://skillicons.dev/icons?i=nodejs" },
+        { id: 3, name: "REACT", logo: "https://skillicons.dev/icons?i=react" },
+        { id: 4, name: "VS CODE", logo: "https://skillicons.dev/icons?i=vscode" },
+        { id: 5, name: "REDUX", logo: "https://skillicons.dev/icons?i=redux" },
+        { id: 6, name: "FIGMA", logo: "https://skillicons.dev/icons?i=figma" },
+      ],
+    },
+    profile: {
+      title: "Profil",
+      basicTitle: "Temel Bilgiler",
+      basicInfo: [
+        { id: 1, label: "Doğum tarihi", value: "GG.AA.YYYY" },
+        { id: 2, label: "İkamet Şehri", value: "ŞEHİR" },
+        { id: 3, label: "Eğitim Durumu", value: "ÜNİVERSİTE, BÖLÜM, YIL" },
+        { id: 4, label: "Tercih Ettiği Rol", value: "Frontend, UI" },
+      ],
+      image: "/profile.png",
+      aboutTitle: "Hakkımda",
+      aboutText:
+        "Buraya kendini anlatan 2-3 cümle gelecek. Şimdilik taslak.",
+    },
+    projects: {
+      title: "Projeler",
+      items: [
+        {
+          id: 1,
+          name: "PROJE ADI 1",
+          description: "Projenin 2-3 cümlelik açıklaması buraya.",
+          image: "/project1.png",
+          tags: ["react", "redux", "vercel"],
+          siteText: "Siteyi Gör",
+          githubText: "Github",
+          siteLink: "https://",
+          githubLink: "https://github.com/",
+        },
+        {
+          id: 2,
+          name: "PROJE ADI 2",
+          description: "Açıklama buraya.",
+          image: "/project2.png",
+          tags: ["react", "axios", "vercel"],
+          siteText: "Siteyi Gör",
+          githubText: "Github",
+          siteLink: "https://",
+          githubLink: "https://github.com/",
+        },
+      ],
+    },
+    footer: {
+      title: "Bana bir mesaj gönder!",
+      text: "Bir sorun mu var, yoksa sadece merhaba mı demek istiyorsun? Çekinme.",
+      email: "ibrahimhaozdemir@gmail.com",
+    },
+  },
+  en: {
+    header: {
+      logo: "ibrahim",
+      langButton: "TÜRKÇE'YE GEÇ",
+      themeDark: "DARK MODE",
+      themeLight: "LIGHT MODE",
+    },
+    hero: {
+      title: "I am a Frontend Developer...",
+      description:
+        "...who likes to craft solid and scalable frontend products with great user experiences.",
+      buttons: [
+        { id: 1, text: "Github", link: "https://github.com/KULLANICI-ADIN" },
+        { id: 2, text: "LinkedIn", link: "https://linkedin.com/in/KULLANICI-ADIN" },
+      ],
+      image: "/hero.png",
+    },
+    skills: {
+      title: "Skills",
+      items: [
+        { id: 1, name: "JAVASCRIPT", logo: "https://skillicons.dev/icons?i=js" },
+        { id: 2, name: "NODE", logo: "https://skillicons.dev/icons?i=nodejs" },
+        { id: 3, name: "REACT", logo: "https://skillicons.dev/icons?i=react" },
+        { id: 4, name: "VS CODE", logo: "https://skillicons.dev/icons?i=vscode" },
+        { id: 5, name: "REDUX", logo: "https://skillicons.dev/icons?i=redux" },
+        { id: 6, name: "FIGMA", logo: "https://skillicons.dev/icons?i=figma" },
+      ],
+    },
+    profile: {
+      title: "Profile",
+      basicTitle: "Basic Information",
+      basicInfo: [
+        { id: 1, label: "Birth Date", value: "DD.MM.YYYY" },
+        { id: 2, label: "Residence City", value: "CITY" },
+        { id: 3, label: "Education", value: "UNIVERSITY, MAJOR, YEAR" },
+        { id: 4, label: "Preferred Role", value: "Frontend, UI" },
+      ],
+      image: "/profile.png",
+      aboutTitle: "About Me",
+      aboutText: "A short paragraph about me. Draft for now.",
+    },
+    projects: {
+      title: "Projects",
+      items: [
+        {
+          id: 1,
+          name: "PROJECT NAME 1",
+          description: "Short English description of the project.",
+          image: "/project1.png",
+          tags: ["react", "redux", "vercel"],
+          siteText: "View Site",
+          githubText: "Github",
+          siteLink: "https://",
+          githubLink: "https://github.com/",
+        },
+        {
+          id: 2,
+          name: "PROJECT NAME 2",
+          description: "Short English description.",
+          image: "/project2.png",
+          tags: ["react", "axios", "vercel"],
+          siteText: "View Site",
+          githubText: "Github",
+          siteLink: "https://",
+          githubLink: "https://github.com/",
+        },
+      ],
+    },
+    footer: {
+      title: "Send me a message!",
+      text: "Got a question or proposal, or just want to say hello? Go ahead.",
+      email: "ibrahimhaozdemir@gmail.com",
+    },
+  },
+};
