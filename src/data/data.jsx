@@ -1,7 +1,7 @@
 export const data = {
   tr: {
     header: {
-      logo: "ibrahim",
+      logo: "Ibrahim",
       langButton: "SWITCH TO ENGLISH",
       themeDark: "KARANLIK MOD",
       themeLight: "AYDINLIK MOD",
@@ -11,10 +11,11 @@ export const data = {
       description:
         "...harika kullanıcı deneyimleri sunan, sağlam ve ölçeklenebilir frontend ürünleri üretmeyi seviyorum.",
       buttons: [
-        { id: 1, text: "Github", link: "https://github.com/KULLANICI-ADIN" },
+        { id: 1, text: "Github", link: "https://github.com/ibrahimhozdemir" },
         { id: 2, text: "LinkedIn", link: "https://linkedin.com/in/KULLANICI-ADIN" },
       ],
       image: "/hero.png",
+      imageAlt: "İbrahim'in profil fotoğrafı",
     },
     skills: {
       title: "Yetenekler",
@@ -37,9 +38,9 @@ export const data = {
         { id: 4, label: "Tercih Ettiği Rol", value: "Frontend, UI" },
       ],
       image: "/profile.png",
+      imageAlt: "Çalışırken bir fotoğrafım",
       aboutTitle: "Hakkımda",
-      aboutText:
-        "Buraya kendini anlatan 2-3 cümle gelecek. Şimdilik taslak.",
+      aboutText: "Buraya kendini anlatan 2-3 cümle gelecek. Şimdilik taslak.",
     },
     projects: {
       title: "Projeler",
@@ -49,6 +50,7 @@ export const data = {
           name: "PROJE ADI 1",
           description: "Projenin 2-3 cümlelik açıklaması buraya.",
           image: "/project1.png",
+          imageAlt: "PROJE ADI 1 ekran görüntüsü",
           tags: ["react", "redux", "vercel"],
           siteText: "Siteyi Gör",
           githubText: "Github",
@@ -60,6 +62,7 @@ export const data = {
           name: "PROJE ADI 2",
           description: "Açıklama buraya.",
           image: "/project2.png",
+          imageAlt: "PROJE ADI 2 ekran görüntüsü",
           tags: ["react", "axios", "vercel"],
           siteText: "Siteyi Gör",
           githubText: "Github",
@@ -72,11 +75,17 @@ export const data = {
       title: "Bana bir mesaj gönder!",
       text: "Bir sorun mu var, yoksa sadece merhaba mı demek istiyorsun? Çekinme.",
       email: "ibrahimhaozdemir@gmail.com",
+      socials: [
+        { id: 1, name: "twitter", link: "https://twitter.com/KULLANICI-ADIN" },
+        { id: 2, name: "codepen", link: "https://codepen.io/KULLANICI-ADIN" },
+        { id: 3, name: "mail", link: "mailto:ibrahimhaozdemir@gmail.com" },
+        { id: 4, name: "instagram", link: "https://instagram.com/KULLANICI-ADIN" },
+      ],
     },
   },
   en: {
     header: {
-      logo: "ibrahim",
+      logo: "Ibrahim",
       langButton: "TÜRKÇE'YE GEÇ",
       themeDark: "DARK MODE",
       themeLight: "LIGHT MODE",
@@ -86,10 +95,11 @@ export const data = {
       description:
         "...who likes to craft solid and scalable frontend products with great user experiences.",
       buttons: [
-        { id: 1, text: "Github", link: "https://github.com/KULLANICI-ADIN" },
+        { id: 1, text: "Github", link: "https://github.com/ibrahimhozdemir" },
         { id: 2, text: "LinkedIn", link: "https://linkedin.com/in/KULLANICI-ADIN" },
       ],
       image: "/hero.png",
+      imageAlt: "Profile photo of İbrahim",
     },
     skills: {
       title: "Skills",
@@ -112,6 +122,7 @@ export const data = {
         { id: 4, label: "Preferred Role", value: "Frontend, UI" },
       ],
       image: "/profile.png",
+      imageAlt: "A photo of me while working",
       aboutTitle: "About Me",
       aboutText: "A short paragraph about me. Draft for now.",
     },
@@ -123,6 +134,7 @@ export const data = {
           name: "PROJECT NAME 1",
           description: "Short English description of the project.",
           image: "/project1.png",
+          imageAlt: "Screenshot of PROJECT NAME 1",
           tags: ["react", "redux", "vercel"],
           siteText: "View Site",
           githubText: "Github",
@@ -134,6 +146,7 @@ export const data = {
           name: "PROJECT NAME 2",
           description: "Short English description.",
           image: "/project2.png",
+          imageAlt: "Screenshot of PROJECT NAME 2",
           tags: ["react", "axios", "vercel"],
           siteText: "View Site",
           githubText: "Github",
@@ -146,6 +159,12 @@ export const data = {
       title: "Send me a message!",
       text: "Got a question or proposal, or just want to say hello? Go ahead.",
       email: "ibrahimhaozdemir@gmail.com",
+      socials: [
+        { id: 1, name: "twitter", link: "https://twitter.com/KULLANICI-ADIN" },
+        { id: 2, name: "codepen", link: "https://codepen.io/KULLANICI-ADIN" },
+        { id: 3, name: "mail", link: "mailto:ibrahimhaozdemir@gmail.com" },
+        { id: 4, name: "instagram", link: "https://instagram.com/KULLANICI-ADIN" },
+      ],
     },
   },
 };

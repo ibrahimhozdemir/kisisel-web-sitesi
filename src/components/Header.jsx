@@ -1,14 +1,18 @@
 function Header({ content }) {
   return (
-    <header className="relative z-10 max-w-5xl mx-auto flex items-center justify-between px-6 pt-8">
-      <span className="text-primary-light text-3xl font-bold">
-        {content.logo}
-      </span>
-      <nav className="flex items-center gap-6">
-        <button className="text-primary font-bold text-sm tracking-wider">
-          {content.langButton}
-        </button>
-      </nav>
+    <header className="relative z-10 w-[66.67%] h-[72px] mx-auto flex items-center">
+      <span className="text-lime text-[32px] font-bold">{content.logo}</span>
+      <button className="absolute right-[20%] text-lime font-bold text-[15px] tracking-[0.1em] uppercase whitespace-nowrap pr-4">
+        {content.langButton}
+      </button>
+      <div className="absolute left-[81.5%] flex items-center gap-4 whitespace-nowrap">
+        <div className="w-[55px] h-[24px] rounded-full bg-toggle relative cursor-pointer shrink-0">
+          <span className="w-[16px] h-[16px] rounded-full bg-accent absolute right-1 top-1"></span>
+        </div>
+        <span className="text-primary font-bold text-[15px] tracking-[0.1em]">
+          {content.themeDark}
+        </span>
+      </div>
     </header>
   );
 }

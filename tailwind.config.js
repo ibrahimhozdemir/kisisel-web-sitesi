@@ -6,8 +6,9 @@ export default {
     extend: {
       colors: {
         primary: "#4731D3",
-        "primary-light": "#CBF281",
+        lime: "#CBF281",
         accent: "#FFE86E",
+        toggle: "#8F88FF",
         "dark-bg": "#252128",
         "dark-section": "#171043",
       },

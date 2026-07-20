@@ -1,27 +1,59 @@
 function Projects({ content }) {
   return (
-    <section className="bg-primary-light py-24">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-primary text-3xl font-bold mb-12">{content.title}</h2>
+    <section className="bg-lime py-24">
+      <div className="max-w-[960px] mx-auto px-6">
+        <h2 className="text-primary text-5xl font-bold mb-12">
+          {content.title}
+        </h2>
+
         <div className="flex flex-col gap-12">
           {content.items.map((project) => (
-            <article key={project.id} className="bg-white rounded-xl shadow-md flex flex-col md:flex-row overflow-hidden">
-              <img src={project.image} alt={project.name} className="w-full md:w-80 h-56 md:h-auto object-cover" />
-              <div className="p-8 flex-1">
-                <h3 className="text-primary text-2xl font-bold mb-4">{project.name}</h3>
-                <p className="text-gray-600 text-sm leading-6 mb-6">{project.description}</p>
-                <div className="flex gap-2 mb-6">
+            <article
+              key={project.id}
+              className="bg-white rounded-xl shadow-[0_18px_88px_-4px_rgba(24,39,75,0.14),0_8px_28px_-6px_rgba(24,39,75,0.12)] flex flex-col md:flex-row overflow-hidden"
+            >
+              <img
+                src={project.image}
+                alt={project.name}
+                className="w-full md:w-[360px] h-56 md:h-[360px] object-cover border-b md:border-b-0 md:border-r border-card-border"
+              />
+
+              <div className="p-8 flex-1 flex flex-col gap-6">
+                <h3 className="text-indigo-700 text-[32px] font-bold">
+                  {project.name}
+                </h3>
+
+                <p className="text-text-body text-base leading-[1.25]">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2.5">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="bg-primary text-white text-xs px-3 py-1 rounded-full">
+                    <span
+                      key={tag}
+                      className="bg-primary text-white text-sm font-medium px-[18px] py-2 rounded-full"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
+
                 <div className="flex gap-6">
-                  <a href={project.siteLink} target="_blank" rel="noreferrer" className="text-primary font-semibold underline">
+                  <a
+                    href={project.siteLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-dark-navy text-base font-medium underline"
+                  >
                     {project.siteText}
                   </a>
-                  <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-primary font-semibold underline">
+
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-dark-navy text-base font-medium underline"
+                  >
                     {project.githubText}
                   </a>
                 </div>
