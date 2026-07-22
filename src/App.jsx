@@ -11,8 +11,8 @@ function App() {
 
   return (
     <main>
-      <div className="bg-primary relative">
-        <div className="absolute top-0 right-0 h-full w-[30%] bg-lime hidden md:block"></div>
+      <div className="bg-primary dark:bg-dark-section relative">
+        <div className="absolute top-0 right-0 h-full w-[30%] bg-lime dark:bg-dark-hero-green hidden md:block"></div>
         <Header content={content.header} />
         <Hero content={content.hero} />
       </div>

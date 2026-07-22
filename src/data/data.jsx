@@ -2,7 +2,10 @@ export const data = {
   tr: {
     header: {
       logo: "Ibrahim",
-      langButton: "SWITCH TO ENGLISH",
+      langButton: [
+        { text: "SWITCH TO ", type: "rest" },
+        { text: "ENGLISH", type: "highlight" },
+      ],
       themeDark: "KARANLIK MOD",
       themeLight: "AYDINLIK MOD",
     },
@@ -86,7 +89,10 @@ export const data = {
   en: {
     header: {
       logo: "Ibrahim",
-      langButton: "TÜRKÇE'YE GEÇ",
+      langButton: [
+        { text: "TÜRKÇE", type: "highlight" },
+        { text: "'YE GEÇ", type: "rest" },
+      ],
       themeDark: "DARK MODE",
       themeLight: "LIGHT MODE",
     },

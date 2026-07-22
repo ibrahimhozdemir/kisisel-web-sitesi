@@ -28,19 +28,19 @@ const icons = {
 
 function Footer({ content }) {
   return (
-    <footer className="bg-footer-bg py-24">
+    <footer className="bg-footer-bg dark:bg-dark-bg py-24">
       <div className="max-w-[960px] mx-auto px-6 flex flex-col items-center gap-6 text-center">
-        <h2 className="text-primary text-5xl font-bold">
+        <h2 className="text-primary dark:text-toggle text-5xl font-bold">
           {content.title}
         </h2>
 
-        <p className="text-dark-navy text-2xl leading-[1.5] max-w-[448px]">
+        <p className="text-dark-navy dark:text-white text-2xl leading-[1.5] max-w-[448px]">
           {content.text}
         </p>
 
         <a
           href={`mailto:${content.email}`}
-          className="text-primary text-xl font-medium underline tracking-[0.05em]"
+          className="text-primary dark:text-toggle text-xl font-medium underline tracking-[0.05em]"
         >
           {content.email}
         </a>
@@ -61,7 +61,7 @@ function Footer({ content }) {
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-[35px] h-[35px] text-primary"
+                className="w-[35px] h-[35px] text-primary dark:text-toggle"
               >
                 {icons[social.name]}
               </svg>

@@ -1,6 +1,6 @@
 function Profile({ content }) {
   return (
-    <section className="bg-primary py-24">
+    <section className="bg-primary dark:bg-dark-section py-24">
       <div className="max-w-[960px] mx-auto px-6">
         <h2 className="text-lime text-5xl font-bold mb-12">{content.title}</h2>
         <div className="flex flex-col md:flex-row items-start gap-[30px]">
