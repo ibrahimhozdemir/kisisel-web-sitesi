@@ -1,6 +1,8 @@
-import { createContext, useContext, useReducer, useEffect } from "react";
+import { createContext, useContext, useReducer, useEffect, useRef } from "react";
 import { data } from "../data/data";
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import api from "../api/axios";
+import { toast } from "react-toastify";
 
 const AppContext = createContext();
 
@@ -23,6 +25,19 @@ function reducer(state, action) {
   }
 }
 
+const toastMessages = {
+  tr: {
+    pending: "Gönderiliyor...",
+    success: "Tercih başarıyla kaydedildi!",
+    error: "Bir hata oluştu, tekrar dene.",
+  },
+  en: {
+    pending: "Sending...",
+    success: "Preference saved successfully!",
+    error: "Something went wrong, please try again.",
+  },
+};
+
 export function AppProvider({ children }) {
   const [storedLanguage, setStoredLanguage] = useLocalStorage("language", getDefaultLanguage());
   const [storedTheme, setStoredTheme] = useLocalStorage("theme", getDefaultTheme());
@@ -32,6 +47,8 @@ export function AppProvider({ children }) {
     theme: storedTheme,
   });
 
+  const isFirstRender = useRef(true);
+
   useEffect(() => {
     setStoredLanguage(state.language);
   }, [state.language, setStoredLanguage]);
@@ -39,6 +56,25 @@ export function AppProvider({ children }) {
   useEffect(() => {
     setStoredTheme(state.theme);
   }, [state.theme, setStoredTheme]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", state.theme === "dark");
+  }, [state.theme]);
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    const messages = toastMessages[state.language];
+
+    toast.promise(api.post("/users", { name: state.language, job: "language-preference" }), {
+      pending: messages.pending,
+      success: messages.success,
+      error: messages.error,
+    });
+  }, [state.language]);
 
   const content = data[state.language];
 
@@ -48,9 +84,7 @@ export function AppProvider({ children }) {
     content,
     dispatch,
   };
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", state.theme === "dark");
-  }, [state.theme]);
+
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
