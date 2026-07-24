@@ -51,7 +51,7 @@ export const data = {
       items: [
         {
           id: 1,
-          name: "JavaScript Tekrar",
+          name: "JavaScript",
           description: "JavaScript ile temel algoritma ve fonksiyon çalışmaları, Jest ile test edilmiş.",
           image: "/project1.png",
           imageAlt: "JavaScript Tekrar proje görseli",
@@ -139,7 +139,7 @@ export const data = {
       items: [
         {
           id: 1,
-          name: "JavaScript Practice",
+          name: "JavaScript",
           description: "Basic algorithm and function practice in JavaScript, tested with Jest.",
           image: "/project1.png",
           imageAlt: "JavaScript Practice project image",

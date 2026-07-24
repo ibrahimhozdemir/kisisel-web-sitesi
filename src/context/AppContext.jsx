@@ -69,7 +69,7 @@ export function AppProvider({ children }) {
 
     const messages = toastMessages[state.language];
 
-    toast.promise(api.post("/users", { name: state.language, job: "language-preference" }), {
+    toast.promise(api.post("/collections/products/records", { data: { name: state.language } }), {
       pending: messages.pending,
       success: messages.success,
       error: messages.error,
