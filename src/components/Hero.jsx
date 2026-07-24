@@ -1,12 +1,12 @@
 function Hero({ content }) {
   return (
-    <section className="relative z-10 w-[66.67%] mx-auto flex flex-col md:flex-row items-center justify-between gap-[30px] pt-[76px] pb-[100px]">
+    <section className="relative z-10 w-[90%] lg:w-[66.67%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[30px] pt-10 lg:pt-[76px] pb-16 lg:pb-[100px]">
       <div className="max-w-[530px]">
-        <h1 className="text-lime text-[54px] font-bold leading-[1.1]">
+        <h1 className="text-lime text-[32px] lg:text-[54px] font-bold leading-[1.1]">
           {content.title}
         </h1>
 
-        <p className="text-white text-2xl font-normal mt-8">
+        <p className="text-white text-base lg:text-2xl font-normal mt-8">
           {content.description}
         </p>
 

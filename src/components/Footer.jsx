@@ -1,14 +1,8 @@
 const icons = {
-  twitter: (
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-  ),
-  codepen: (
+  youtube: (
     <>
-      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
-      <line x1="12" y1="22" x2="12" y2="15.5" />
-      <polyline points="22 8.5 12 15.5 2 8.5" />
-      <polyline points="2 15.5 12 8.5 22 15.5" />
-      <line x1="12" y1="2" x2="12" y2="8.5" />
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
     </>
   ),
   mail: (
@@ -30,39 +24,17 @@ function Footer({ content }) {
   return (
     <footer className="bg-footer-bg dark:bg-dark-bg py-24">
       <div className="max-w-[960px] mx-auto px-6 flex flex-col items-center gap-6 text-center">
-        <h2 className="text-primary dark:text-toggle text-5xl font-bold">
-          {content.title}
-        </h2>
-
+        <h2 className="text-primary dark:text-toggle text-5xl font-bold">{content.title}</h2>
         <p className="text-dark-navy dark:text-white text-2xl leading-[1.5] max-w-[448px]">
           {content.text}
         </p>
-
-        <a
-          href={`mailto:${content.email}`}
-          className="text-primary dark:text-toggle text-xl font-medium underline tracking-[0.05em]"
-        >
+        <a href={`mailto:${content.email}`} className="text-primary dark:text-toggle text-xl font-medium underline tracking-[0.05em]">
           {content.email}
         </a>
-
         <div className="flex gap-6">
           {content.socials.map((social) => (
-            <a
-              key={social.id}
-              href={social.link}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={social.name}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-[35px] h-[35px] text-primary dark:text-toggle"
-              >
+            <a key={social.id} href={social.link} target="_blank" rel="noreferrer" aria-label={social.name}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-[35px] h-[35px] text-primary">
                 {icons[social.name]}
               </svg>
             </a>

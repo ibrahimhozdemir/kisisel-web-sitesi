@@ -1,8 +1,8 @@
 function Skills({ content }) {
   return (
     <section className="bg-white dark:bg-dark-bg py-24">
-      <div className="max-w-[960px] mx-auto px-6 flex flex-col md:flex-row gap-16">
-        <h2 className="text-primary dark:text-lime text-5xl font-bold w-[290px] shrink-0">
+      <div className="max-w-[960px] mx-auto px-6 flex flex-col lg:flex-row gap-16">
+        <h2 className="text-primary dark:text-lime text-5xl font-bold lg:w-[290px] shrink-0">
           {content.title}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-[35px] flex-1">
