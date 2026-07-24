@@ -33,6 +33,7 @@ function Header({ content }) {
 
       <div className="md:absolute md:left-[81.5%] flex items-center gap-4 whitespace-nowrap">
         <div
+          data-testid="theme-toggle"
           onClick={() => dispatch({ type: "TOGGLE_THEME" })}
           className={`w-[55px] h-[24px] rounded-full relative cursor-pointer shrink-0 transition-colors duration-200 ${
             theme === "light" ? "bg-toggle" : "bg-dark-toggle-track"
