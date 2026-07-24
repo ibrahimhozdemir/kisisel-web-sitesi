@@ -1,7 +1,7 @@
 export const data = {
   tr: {
     header: {
-      logo: "Ibrahim",
+      logo: "Ibrahim Halil Ozdemir",
       langButton: [
         { text: "SWITCH TO ", type: "rest" },
         { text: "ENGLISH", type: "highlight" },
