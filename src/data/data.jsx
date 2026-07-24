@@ -89,7 +89,7 @@ export const data = {
   },
   en: {
     header: {
-      logo: "Ibrahim",
+      logo: "Ibrahim Halil Ozdemir",
       langButton: [
         { text: "TÜRKÇE", type: "highlight" },
         { text: "'YE GEÇ", type: "rest" },
